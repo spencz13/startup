@@ -96,6 +96,8 @@
 #### example: document.getElementById("demo").style.color = "red";
 
 ### What does the following line of Javascript do using a # selector?
+#### document.getElementById("id"); # is the id. color in CSS also uses # for selecting color. normally you wouldn’t find # symbol used in JavaScript except to denote an ID of a DOM element (a CSS-based syntax). Such usage would be inside a string and wouldn’t be considered JavaScript syntax at all.
+
 
 
 ### Which of the following are true? (mark all that are true about the DOM)
@@ -116,26 +118,32 @@
 #### With the inline-block you get control of the width and height of the HTML elements again, even if they are rendered as part of the normal text flow.
 
 ### How would you use CSS to change all the div elements to have a background color of red?
-
+#### use background-color property.
 
 ### How would you display an image with a hyperlink in HTML?
 #### example: <a href="https://www.Youtube.com/"><img src="https://www.tutorialspoint.com/assets/questions/media/426142-1668760872.png" style="width:50px;height:50px;"></a>
 #### <a href="link address"><img src="image destination"></a>
 
 ### In the CSS box model, what is the ordering of the box layers starting at the inside and working out?
-
+#### Content - The content of the box, where text and images appear
+#### Padding - Clears an area around the content. The padding is transparent
+#### Border - A border that goes around the padding and content
+#### Margin - Clears an area outside the border. The margin is transparent
 
 ### Given the following HTML, what CSS would you use to set the text "troubl" to green and leave the "double" text unaffected?
 
 
 ### What will the following code output when executed using a for loop and console.log?
-
-
 ### How would you use JavaScript to select an element with the id of “byu” and change the text color of that element to green?
 
 
 ### What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading?
-
+#### paragraph: <p>
+#### first level heading: <h1>
+#### second level heading: <h2>
+#### third level heading: <h3>
+#### ordered list: <ol>
+#### unordered list: <ul>
 
 ### How do you declare the document type to be html?
 #### <! DOCTYPE html>
@@ -249,5 +257,13 @@
 #### yes
 
 ### Port 443, 80, 22 is reserved for which protocol?
+#### Port 80 and 443 are ports generally associated with "the Internet". Port 443/HTTPS is the HTTP protocol over TLS/SSL. Port 80/HTTP is the World Wide Web.
 
 ### What will the following code using Promises output when executed?
+#### A Promise is in one of these states:
+#### pending: initial state, neither fulfilled nor rejected.
+#### fulfilled: meaning that the operation was completed successfully.
+#### rejected: meaning that the operation failed.
+#### The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occur, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+#### A promise is said to be settled if it is either fulfilled or rejected, but not pending.
+
