@@ -22,3 +22,4 @@
 ### build update 10/5/23: Misunderstood last assignment and now I'm writing the HTML of the site's most basic functions. 
 ### build upadte 10/14/23: added bulk of CSS for the site. This includes downloads, better coloring and images, padding and spacing for text. etc.
 ### Build Update 10/28/23: Added a few JS functions. This included a somewhat functional chat where the user inputs some info and gets a response. Also added a proper login which remembers the user's information as long as they are using the site in one session. 
+### Build update 11/11/23: Added fully functioning chat using Express and Node.js. Also added endpoint connecting random image generator in the main page+about page. 
