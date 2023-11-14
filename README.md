@@ -16,7 +16,7 @@
 ## Website sketch
 ![Mock](IMG_0290.jpg)
 
-### http://worktestapp.com
+### http://startup.worktestapp.com
 
 ### build update 9/30/23: added some funcitons including simon HTML program. 
 ### build update 10/5/23: Misunderstood last assignment and now I'm writing the HTML of the site's most basic functions. 
