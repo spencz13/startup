@@ -24,3 +24,5 @@
 ### Build Update 10/28/23: Added a few JS functions. This included a somewhat functional chat where the user inputs some info and gets a response. Also added a proper login which remembers the user's information as long as they are using the site in one session. 
 ### Build update 11/11/23: Added endpoint connecting random image generator in the main page+about page. Also added chat link to the pop-up chat which uses Node.js and Socket.io (realtime service).
 ### In progress 11/13/23: Make website look better and chat more useable by coonnecting username and more security features (make active rooms with keys or codes). 
+### Build update (1) 11/18/23: Added support for mogodb. In process of making it used for login and possible ability to save messages on chat. 
+### Build update (2) 11/18/23: Added saved login support via mogodb. 
