@@ -26,4 +26,4 @@
 ### In progress 11/13/23: Make website look better and chat more useable by coonnecting username and more security features (make active rooms with keys or codes). 
 ### Build update (1) 11/18/23: Added support for mogodb. In process of making it used for login and possible ability to save messages on chat. 
 ### Build update (2) 11/18/23: Added saved login support via mogodb. 
-### Build update 12/14/23: Converted site to run in react. Added more functionality with Login. Changed how chat functions slightly. 
+### Build update 12/14/23: Converted site to run in react. Added more functionality with Login. Updated chat and added some more style to the 'blog' element. 
