@@ -280,6 +280,7 @@
 ### SameSite=Strict: The cookie is only sent with same-site requests.
 ### SameSite=Lax: The cookie is sent with same-site requests and top-level navigations (e.g., clicking a link).
 ### Usage: Helps prevent certain types of cross-site request forgery (CSRF) attacks by limiting when cookies are sent with cross-origin requests.
+
 ### HTTPOnly:
 ### Purpose: Enhances security by preventing client-side access to the cookie through JavaScript.
 ### Usage: If set, the cookie cannot be accessed or modified by client-side scripts, reducing the risk of cross-site scripting (XSS) attacks.
@@ -293,18 +294,15 @@
 ### you can do so using a middleware function. Below is an example of how you might set up an Express app with middleware to log information for such a request:
 ### const express = require('express');
 ### const app = express();
-
 ### // Middleware to log information about incoming requests
 ### app.use((req, res, next) => {
 ###   console.log(`Incoming ${req.method} request to ${req.path}`);
 ###   next(); // Call the next middleware in the stack
 ### });
-
 ### // Route handler for the /foo/bar path
 ### app.get('/foo/bar', (req, res) => {
 ###   res.send('Response for /foo/bar');
 ### });
-
 ### // Start the server
 ### const port = 3000;
 ### app.listen(port, () => {
