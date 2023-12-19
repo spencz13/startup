@@ -288,6 +288,7 @@
 ### Here's an example of a cookie with multiple attributes set:
 ### Set-Cookie: myCookie=myValue; Domain=.example.com; Path=/; SameSite=Lax; HttpOnly
 ### In this example, the cookie is limited to the domain ".example.com" and its subdomains, is valid for all paths ("/"), has the "SameSite" attribute set to "Lax," and is marked as "HttpOnly" to prevent JavaScript access. The specific values for these attributes will depend on your application's requirements.
+
 ### Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /foo/bar?
 ### you can do so using a middleware function. Below is an example of how you might set up an Express app with middleware to log information for such a request:
 ### const express = require('express');
@@ -386,6 +387,7 @@
 
 ### How should you store user passwords in a database?
 ### Use HTTPS, hashing, key stretching, etc. 
+
 ### Assuming the following Node.js service code is executing with websockets, what will be logged to the console of the web browser?
 ### Assuming you have a WebSocket server running on the Node.js side and a corresponding WebSocket client on the browser side, you might see logging related to the WebSocket connection, events, and any custom messages you decide to log.
 ### Server-Side (Node.js):
