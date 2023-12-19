@@ -1,22 +1,4 @@
-# Here we will store lecture notes and other info to use on Midterm!
-
-## To make a website run: Enter console home on AWS website. 
-## Route 53 allows you to configure the name of the server
-## Domain name system (DNS) is a system that will look up a name of a site to a server.
-## Each server has a unique IP adresss for a site. 
-### If you set up DNS correctly in git bash for byu, you can use the "dig" command to lookup DNS info. 
-### TLD (Top level domain) examples: .com .gov .gov .mil etc.
-
-## 10/1/23: 
-### Notes on startup HTML: I guess it was just edit the simon code and then put it in the workspace. Cool. HTML is easy enough and embedding content is pretty easy, so it would be simple enough to put a video or photo in.
-
-## 10/2/23: 
-### CSS: allows your webpage to adapt to the various devices that could access your site (phones, computers, etc)
-### Media queries: you want your page to have a generic adaption to multiple devices (avoid setting a preset based on specific devices). You can specify orientation of the devices (portrait or horizontal) and other things.
-### floats: allows text to adjust to the size of the screen and adjust the location and size of images in the page. Can determine max adjusting size and if the image will increase or decrease.
-### 
-
-## Midterm Study Guide: example questions: 
+## Midterm and finals Study Guide: example questions: 
 
 ### In the following code, what does the link element do?
 #### <link rel="stylesheet" href="styles.css"> The <link> tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets or to add a favicon to your website. The <link> element is an empty element, it contains attributes only.
@@ -97,8 +79,6 @@
 
 ### What does the following line of Javascript do using a # selector?
 #### document.getElementById("id"); # is the id. color in CSS also uses # for selecting color. normally you wouldn’t find # symbol used in JavaScript except to denote an ID of a DOM element (a CSS-based syntax). Such usage would be inside a string and wouldn’t be considered JavaScript syntax at all.
-
-
 
 ### Which of the following are true? (mark all that are true about the DOM)
 #### The HTML DOM is a standard object model and programming interface for HTML. It defines:
@@ -267,15 +247,17 @@
 #### The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occur, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
 #### A promise is said to be settled if it is either fulfilled or rejected, but not pending.
 
-#### What ports are used for HTTP, HTTPS, SSH?
-#### HTTP: 443
-#### HTTPS: 80
-#### SSH: 22
 
-#### What do HTTP status codes in the 300, 400, 500 range indicate?
-#### 300-399: redirection messages
-#### 400-499: client error messages
-#### 500-599: server error responses
+# FINAL: 
+### What ports are used for HTTP, HTTPS, SSH?
+### HTTP: 443
+### HTTPS: 80
+### SSH: 22
+
+### What do HTTP status codes in the 300, 400, 500 range indicate?
+### 300-399: redirection messages
+### 400-499: client error messages
+### 500-599: server error responses
 
 ### What does the HTTP header content-type allows you to do?
 ### Content-Type: text/html; charset=utf-8
@@ -334,7 +316,54 @@
 ### Incoming GET request to /foo/bar
 
 ### Given the following Express service code: What does the following JavaScript fetch return?
-
+### example: 
+### const express = require('express');
+### const app = express();
+### const port = 3000;
+### // Middleware to parse JSON in request body
+### app.use(express.json());
+### // Sample endpoint
+### app.get('/api/data', (req, res) => {
+###   // Sample data to be sent as a JSON response
+###   const responseData = {
+###     message: 'Hello from the Express service!',
+###     timestamp: new Date().toISOString(),
+###   };
+###   // Sending a JSON response
+###   res.json(responseData);
+### });
+### // Start the server
+### app.listen(port, () => {
+###   console.log(`Express service listening at http://localhost:${port}`);
+### });
+### <!DOCTYPE html>
+### <html lang="en">
+### <head>
+###   <meta charset="UTF-8">
+###   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+###   <title>Fetch Example</title>
+### </head>
+### <body>
+### <script>
+###   // JavaScript code using the fetch function to make a request to the Express API endpoint
+###   fetch('http://localhost:3000/api/data')
+###     .then(response => response.json())
+###     .then(data => {
+###       console.log('Response from Express service:', data);
+###       // You can handle the data here as needed
+###     })
+###     .catch(error => console.error('Error:', error));
+### </script>
+### </body>
+### </html>
+### Explanation:
+### The Express service has a single endpoint /api/data, which responds to GET requests with a JSON payload.
+### The HTML file includes a simple JavaScript code snippet that uses the fetch function to make a GET request to http://localhost:3000/api/data.
+### The fetch function returns a Promise that resolves to the Response object representing the completion or failure of the request.
+### The response.json() method is used to extract the JSON body from the response.
+### The final then block logs the received data to the console. You can customize this part to handle the data as needed in your application.
+### Make sure to run the Express service first before opening the HTML file in a browser to see the interaction.
+### ***In the JavaScript fetch function in the provided code, the fetch function returns a Promise that resolves to the Response object representing the response to the request made.
 
 ### Given the following MongoDB query
 ### { cost: { $gt: 10 }, name: /fran.*/}
